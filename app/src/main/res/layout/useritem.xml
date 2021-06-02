@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:padding="5dp"
+        android:contentDescription="@string/image" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/img"
+        android:orientation="vertical"
+        android:layout_toEndOf="@+id/img">
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:text="@string/name"
+        android:layout_height="wrap_content"
+        android:textColor="#131313"
+        android:textSize="16sp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/status"
+        android:layout_marginLeft="10dp"
+        android:textColor="#28BA2E"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp" />
+
+    <TextView
+        android:id="@+id/agency"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/agency"
+        android:layout_marginLeft="10dp"
+        android:textColor="#E91E63"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp" />
+
+
+    <TextView
+        android:id="@+id/wiki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/wikipedia"
+        android:layout_marginLeft="10dp"
+        android:textColor="#175F98"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginStart="10dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.4dp"
+        android:layout_below="@+id/img"
+        android:background="@color/black"/>
+</RelativeLayout>
